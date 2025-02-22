@@ -3,9 +3,11 @@
 DIRECTORY=/storage/emulated/0/WiiLink
 DOWNLOAD_URL=$(curl -L -s https://api.github.com/repos/WiiLink24/WiiLink24-Patcher/releases/latest | grep -o -E "https://(.*)WiiLinkPatcher_Linux-ARM64(.*)" | sed 's/\"//g')
 
+apt update
 apt install libicu-dev -y
 
-curl $DOWNLOAD_URL -o WLP
+echo "Downloading patcher..."
+curl $DOWNLOAD_URL -L -s -o WLP
 chmod +x WLP
 
 if [ -d "WAD" ]; then
