@@ -1,11 +1,12 @@
 #!/bin/bash
 
 if [ ! -r "/storage/emulated/0" ]; then
-    termux-setup-storage
+    termux-setup-storage && sleep 0
 fi
 if [ ! -r "/storage/emulated/0" ]; then
     echo "For this script to work, Termux needs file access permissions."
     echo "Exiting..."
+    exit
 fi
 
 pkg update
