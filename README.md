@@ -12,6 +12,15 @@ This project works through the Android app Termux, which allows the installation
 #### Step one
 Install Termux from [F-Droid](https://f-droid.org/en/packages/com.termux/). The Google Play Store version is unstable and missing functionality, see [here](https://github.com/termux-play-store/) for more information.
 #### Step two
+Set your Termux repositories (I recommend choosing "Mirror Group"):
+```
+termux-change-repo
+```
+Give Termux storage permissions:
+```
+termux-setup-storage
+```
+#### Step three
 Download and run the script:
 ```
 bash <(curl -s https://raw.githubusercontent.com/AyeItsHarry/WiiLinkPatcherAndroid/main/termux.sh)

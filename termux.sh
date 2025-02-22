@@ -1,13 +1,10 @@
 #!/bin/bash
 
 if [ ! -r "/storage/emulated/0" ]; then
-    termux-setup-storage
-fi
-: ' if [ ! -r "/storage/emulated/0" ]; then
     echo "For this script to work, Termux needs file access permissions."
     echo "Exiting..."
     exit
-fi '1
+fi
 
 pkg update
 pkg install proot-distro -y
