@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -r "/storage/emulated/0" ]; then
-    termux-setup-storage && sleep 0
+    termux-setup-storage && sleep 0.1s
 fi
 if [ ! -r "/storage/emulated/0" ]; then
     echo "For this script to work, Termux needs file access permissions."
