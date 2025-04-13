@@ -10,11 +10,11 @@ echo "Downloading patcher..."
 curl $DOWNLOAD_URL -L -s -o WLP
 chmod +x WLP
 
-if [ -d "WAD" ]; then
+if [ -d "WiiLink/WAD" ]; then
   echo "Clearing up previous WADs..."
   rm -r WAD
 fi
-if [ -d "apps" ]; then
+if [ -d "WiiLink/apps" ]; then
   echo "Clearing up previous apps..."
   rm -r apps
 fi
@@ -25,14 +25,14 @@ fi
 
 ./WLP
 
-if [ ! -d "WAD" ] && [ ! -d "apps" ]; then
+if [ ! -d "WiiLink/WAD" ] && [ ! -d "WiiLink/apps" ]; then
   echo "There are no files to copy!"
 else
   mkdir $DIRECTORY
   echo Copying patched WADs...
-  cp -r WAD/ $DIRECTORY/WAD
+  cp -r WiiLink/WAD/ $DIRECTORY/WAD
   echo Copying apps...
-  cp -r apps/ $DIRECTORY/apps
+  cp -r WiiLink/apps/ $DIRECTORY/apps
   echo 'Done!'
   echo "You can find the 'WAD' and 'apps' folders in the WiiLink folder on your device's internal storage."
   echo ""
