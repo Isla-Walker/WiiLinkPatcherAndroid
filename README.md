@@ -28,4 +28,7 @@ bash <(curl -s https://raw.githubusercontent.com/Isla-Walker/WiiLinkPatcherAndro
 
 After running the script, your device will ask you to give Termux storage permissions. This is needed to copy the patched wads to your device's internal storage. After granting the storage permission, the script will install an Ubuntu environment and all patcher dependencies, then run the patcher. This may take a while.
 
-Once in the patcher, your SD card will NOT be detected. This behaviour is expected. Run the patcher without an SD card, and press 3 to exit it once it has patched the files. The script will then copy the files the patcher generated to the `WiiLink` folder on your device's internal storage. From there, you can either install the WADs in Dolphin, or copy them over to an SD card for use on a real Wii.
+> In the patcher, it may say there is an update available. If so, **DECLINE THE UPDATE**.
+
+Once in the patcher, your SD card will **NOT** be detected. This behaviour is expected.
+Run the patcher without choosing an SD card, and press 3 to exit it once it has patched the files. The script will then copy the files the patcher generated to the `WiiLink` folder on your device's internal storage. From there, you can either install the WADs in Dolphin, or copy them over to an SD card for use on a real Wii.
