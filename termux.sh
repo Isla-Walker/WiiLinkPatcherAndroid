@@ -13,4 +13,4 @@ if [ ! -d "/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs
     pd i ubuntu
 fi
 
-pd sh ubuntu -- bash <(curl -s https://raw.githubusercontent.com/AyeItsHarry/WiiLinkPatcherAndroid/main/ubuntu.sh)
+pd sh ubuntu -- bash <(curl -s https://raw.githubusercontent.com/Isla-Walker/WiiLinkPatcherAndroid/main/ubuntu.sh)
