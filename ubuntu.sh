@@ -23,7 +23,7 @@ if [ -d "$DIRECTORY" ]; then
   rm -r $DIRECTORY
 fi
 
-./WLP
+DOTNET_GCHeapHardLimit=1C0000000 ./WLP
 
 if [ ! -d "WiiLink/WAD" ] && [ ! -d "WiiLink/apps" ]; then
   echo "There are no files to copy!"
